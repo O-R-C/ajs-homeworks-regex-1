@@ -1,4 +1,5 @@
-import character from "./data";
-import destructureIt from "./destructureIt";
+import Validator from "./Classes/Validator";
 
-console.log(destructureIt(character));
+const validator = new Validator();
+
+console.log(validator.validateUsername("Adam"));
