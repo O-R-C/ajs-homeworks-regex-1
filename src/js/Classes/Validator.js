@@ -1,4 +1,12 @@
 export default class Validator {
+  /**
+   * @method
+   * проверяет валидность имени пользователя
+   *
+   * @param {string | number} name имя пользователя
+   *
+   * @returns {boolean} имя валидно или нет
+   */
   validateUsername(name) {
     return !this.checkForIllegalSymbols(name) ? this.checkRules(name) : false;
   }
