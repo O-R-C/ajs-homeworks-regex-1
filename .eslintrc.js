@@ -18,6 +18,13 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    "prettier/prettier": "error",
+    "prettier/prettier": "off",
+    quotes: [
+      "warn",
+      {
+        singleQuote: true,
+        semi: true,
+      },
+    ],
   },
 };
